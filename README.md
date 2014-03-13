@@ -3,15 +3,17 @@ docean
 
 Python Wrapper for the Digital Ocean API
 
-#Supported Actions
+##Supported Actions
 
-*Droplets
-*Regions
-*Images
-*SSH_Keys
-*Sizes
-*Domains
-*Events
+* Droplets
+* Regions
+* Images
+* SSH_Keys
+* Sizes
+* Domains
+* Events
+
+##Dependencies
 
 Currently the only dependecy is requests
 
@@ -19,7 +21,7 @@ Currently the only dependecy is requests
 pip install requests
 ```
 
-#Usage
+##Usage
 
 1) Create a config file in your home directory named .docean, needs the base api url, client_id and api_key
 
