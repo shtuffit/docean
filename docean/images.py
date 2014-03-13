@@ -1,4 +1,4 @@
-from .docean import build_path, getdo
+from .docean import build_path, get_do
 
 def list_images():
     return get_do('/images/')

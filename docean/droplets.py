@@ -1,9 +1,9 @@
-from .docean import build_path, getdo
+from .docean import build_path, get_do
 
 def list_droplets():
     return get_do('/droplets/')
 
-def droplet_action(droplet_id, actioni'', params={}):
+def droplet_action(droplet_id, action='', params={}):
     path = '/droplets/' + droplet_id + '/'
     if action:
         path += action + '/'
@@ -50,4 +50,4 @@ def rename(droplet_id, name):
     return droplet_action(droplet_id, action='rename', params={'name': name})
 
 def destroy(droplet_id, scrub_data=True):
-    return droplet_action(droplet_id, action='destroy', params=('scrub_data': scrub_data))
+    return droplet_action(droplet_id, action='destroy', params={'scrub_data': scrub_data})

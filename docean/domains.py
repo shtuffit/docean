@@ -1,4 +1,4 @@
-from .docean import getdo
+from .docean import get_do
 
 def list_domains():
     return get_do('/domains/')
@@ -8,7 +8,7 @@ def add_domain(name, ip_address):
 
 def domain_action(domain_id, action='', extrapath='', params={}):
     path = '/domains/' + domain_id +'/'
-    if action
+    if action:
         path += action + '/'
     return get_do(path, params=params)
 
