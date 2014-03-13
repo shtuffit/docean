@@ -21,9 +21,11 @@ pip install requests
 
 #Usage
 
-1) Create a config file in your home directory, needs the base api url, client_id and api_key
+1) Create a config file in your home directory named .docean, needs the base api url, client_id and api_key
 
-```json
+```
+$ cat ~/.docean
+
 {
   "base_url":	"https://api.digitalocean.com",
   "client_id":	"Vbk14dTVNqhvodGCEXZ14EbMpyGegk489",
